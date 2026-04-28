@@ -1,4 +1,4 @@
 public interface Billable {
     double calculateMonthlyNetPrice();
-    double calculateMonthlyGrossPrice();
+    double calculateMonlthyGrossPrice();
 }

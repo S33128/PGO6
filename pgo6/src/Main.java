@@ -21,7 +21,7 @@ public class Main {
             plan.printSummary();
 
             totalMonthlyNet += plan.calculateMonthlyNetPrice();
-            totalMonthlyGross += plan.calculateMonthlyGrossPrice();
+            totalMonthlyGross += plan.calculateMonlthyGrossPrice();
             totalContractNet += plan.calculateTotalNetPrice();
 
             if (plan instanceof RemoteAccess) {
@@ -44,6 +44,6 @@ public class Main {
 
         Billable billable = new OnlineCoachingPlan("ONL-999", "Test Client", 2, 70.0, true, 1, false, true);
         System.out.println("Billable net: " + billable.calculateMonthlyNetPrice());
-        System.out.println("Billable gross: " + billable.calculateMonthlyGrossPrice());
+        System.out.println("Billable gross: " + billable.calculateMonlthyGrossPrice());
     }
 }

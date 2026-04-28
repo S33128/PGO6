@@ -1,5 +1,3 @@
-import java.io.Serializable;
-
 public abstract class MembershipPlan implements Billable {
     private String planCode;
     private String clientName;
@@ -51,14 +49,13 @@ public abstract class MembershipPlan implements Billable {
         System.out.println("Plan: " + getPlanCode());
         System.out.println("Client name: " + getClientName());
         System.out.println("Monthly net: " + calculateMonthlyNetPrice());
-        System.out.println("Monthly gross: " + calculateMonthlyGrossPrice());
+        System.out.println("Monthly gross: " + calculateMonlthyGrossPrice());
         System.out.println("Total net price: " + calculateTotalNetPrice());
+    }
 
-        @Override
-                public String toString(){
-            return "Code: " + planCode + ", Client: " + clientName +
-                    ", Months: " + months + ", AutoRenew: " + autoRenew;
-        }
-
+    @Override
+    public String toString(){
+        return "Code: " + planCode + ", Client: " + clientName +
+                ", Months: " + months + ", AutoRenew: " + autoRenew;
     }
 }

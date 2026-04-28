@@ -39,7 +39,7 @@ public class OnlineCoachingPlan extends MembershipPlan implements RemoteAccess{
 
     @Override
     public String toString(){
-        return.super.toString() +
+        return super.toString() +
                 ", Video: " + videoConsultantions +
                 ", Meal Plan: " + mealPlanIncluded +
                 "' Library: " + recordedLibraryAccess;

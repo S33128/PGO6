@@ -15,7 +15,7 @@ public class PersonalTrainingPlan extends MembershipPlan{
     }
 
     @Override
-    public String getPlanCode() {
+    public String getPlanType() {
         return "Personal Training";
     }
 
@@ -29,7 +29,7 @@ public class PersonalTrainingPlan extends MembershipPlan{
         if (trainerLevel == 3) price += 180;
 
         if (dietConsultationIncluded) price += 50;
-        if (isAutoRenew()) price -+ 15;
+        if (isAutoRenew()) price -= 15;
 
         return price;
     }
